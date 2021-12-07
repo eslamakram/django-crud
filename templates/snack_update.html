@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Snacks List{% endblock title %}
+
+{% block content %}
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type ="submit" value="Issa"/>
+    </form>
+{% endblock content %}
